@@ -37,3 +37,28 @@ if (menuToggle && navLinks) {
         });
     });
 }
+
+document.getElementById('google-form').addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent default form submission
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  // Construct the Google Form POST URL
+  const url = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkoXYSqU5acMJ6nlqKnnphIzMBtnoANGe2U7RZIALodlx_9w/formResponse';
+
+  // Use fetch to submit the form in the background
+  fetch(url, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: data
+  })
+  .then(() => {
+    // Show success message
+    form.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  })
+  .catch((err) => {
+    console.error('Error submitting form', err);
+  });
+});

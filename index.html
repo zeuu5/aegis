@@ -222,29 +222,35 @@
                 <p>Professional assessment of your security posture. No obligations.</p>
             </div>
 
-            <div class="check-container">
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" class="form-input" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Company Name</label>
-                        <input type="text" class="form-input" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Work Email / Phone</label>
-                        <input type="text" class="form-input" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Inquiry Details</label>
-                        <textarea class="form-input" placeholder="How can we assist you?"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
-                </form>
-            </div>
-        </div>
-    </section>
+          <div class="check-container">
+  <form id="google-form">
+    <div class="form-group">
+      <label class="form-label">Full Name</label>
+      <input type="text" name="entry.1079675005" class="form-input" placeholder="Your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Company Name</label>
+      <input type="text" name="entry.1174374992" class="form-input" placeholder="Company name">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Work Email / Phone</label>
+      <input type="text" name="entry.795685209" class="form-input" placeholder="Email or phone" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Inquiry Details</label>
+      <textarea name="entry.1929013246" class="form-input" placeholder="How can we assist you?"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+  </form>
+
+  <div id="form-success" style="display:none; margin-top: 16px; text-align:center; color:green;">
+    Thank you! Your request has been submitted.
+  </div>
+</div>
 
     <!-- 5. Why Choose Aegis -->
     <section id="why-us">
