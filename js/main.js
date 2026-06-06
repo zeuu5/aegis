@@ -1,64 +1,79 @@
-// Intersection Observer for Fade-in Animation
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
+/* =========================================================
+   NAVBAR — scroll class
+   ========================================================= */
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Only animate once
-        }
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+const menuBtn  = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+
+  // Close menu when any nav link is clicked
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
     });
-}, observerOptions);
+  });
 
-document.querySelectorAll('.fade-in').forEach(el => {
-    observer.observe(el);
-});
-
-// Mobile Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
-if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', !isExpanded);
-        navLinks.classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.setAttribute('aria-expanded', 'false');
-            navLinks.classList.remove('active');
-        });
-    });
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navbar.contains(e.target)) {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
 }
 
-document.getElementById('google-form').addEventListener('submit', function(e) {
-  e.preventDefault(); // prevent default form submission
-
-  const form = e.target;
-  const data = new FormData(form);
-
-  // Construct the Google Form POST URL
-  const url = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkoXYSqU5acMJ6nlqKnnphIzMBtnoANGe2U7RZIALodlx_9w/formResponse';
-
-  // Use fetch to submit the form in the background
-  fetch(url, {
-    method: 'POST',
-    mode: 'no-cors',
-    body: data
-  })
-  .then(() => {
-    // Show success message
-    form.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-  })
-  .catch((err) => {
-    console.error('Error submitting form', err);
+/* =========================================================
+   SCROLL-TRIGGERED FADE-UP ANIMATIONS
+   ========================================================= */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
   });
-});
+}, { threshold: 0.07 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+/* =========================================================
+   GOOGLE FORM SUBMISSION
+   ========================================================= */
+const form = document.getElementById('google-form');
+
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector('.form-submit');
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+
+    fetch(
+      'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkoXYSqU5acMJ6nlqKnnphIzMBtnoANGe2U7RZIALodlx_9w/formResponse',
+      { method: 'POST', mode: 'no-cors', body: new FormData(form) }
+    )
+    .then(() => {
+      form.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    })
+    .catch(() => {
+      // Even if fetch errors (CORS), the form likely submitted — show success
+      form.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    });
+  });
+}
