@@ -1,79 +1,53 @@
-/* =========================================================
-   NAVBAR — scroll class
-   ========================================================= */
+'use strict';
+
+/* ── Navbar scroll state ── */
 const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
+const onScroll = () => navbar.classList.toggle('stuck', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, { passive: true });
 
-/* =========================================================
-   MOBILE MENU
-   ========================================================= */
-const menuBtn  = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', String(open));
+/* ── Mobile menu ── */
+const burger = document.querySelector('.nav-burger');
+const menu   = document.querySelector('.nav-menu');
+if (burger && menu) {
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(open));
   });
-
-  // Close menu when any nav link is clicked
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  }));
+  document.addEventListener('click', e => {
     if (!navbar.contains(e.target)) {
-      navLinks.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
     }
   });
 }
 
-/* =========================================================
-   SCROLL-TRIGGERED FADE-UP ANIMATIONS
-   ========================================================= */
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
+/* ── Scroll reveal ── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   });
 }, { threshold: 0.07 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-/* =========================================================
-   GOOGLE FORM SUBMISSION
-   ========================================================= */
-const form = document.getElementById('google-form');
-
+/* ── Google Form ── */
+const form = document.getElementById('aegis-form');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
-
-    const submitBtn = form.querySelector('.form-submit');
-    submitBtn.textContent = 'Sending…';
-    submitBtn.disabled = true;
+    const btn = form.querySelector('.submit-btn');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
 
     fetch(
       'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkoXYSqU5acMJ6nlqKnnphIzMBtnoANGe2U7RZIALodlx_9w/formResponse',
       { method: 'POST', mode: 'no-cors', body: new FormData(form) }
-    )
-    .then(() => {
+    ).finally(() => {
       form.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    })
-    .catch(() => {
-      // Even if fetch errors (CORS), the form likely submitted — show success
-      form.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
+      document.getElementById('form-ok').style.display = 'block';
     });
   });
 }

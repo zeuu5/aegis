@@ -3,152 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aegis Security — professional cybersecurity services. Website audits, phishing training, email security, and more.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>">
+  <meta name="description" content="Aegis Security — professional cybersecurity services. Website audits, phishing training, email security setup, and ongoing protection.">
+  <meta property="og:title"       content="Aegis Security | Fortifying Your Digital Frontier">
+  <meta property="og:description" content="Professional cybersecurity without the enterprise price tag.">
+  <meta property="og:type"        content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306B6D4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>">
   <title>Aegis Security | Fortifying Your Digital Frontier</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ═══════════════════════════ NAVBAR ═══════════════════ -->
 <nav class="navbar" aria-label="Main navigation">
   <div class="container">
-    <div class="nav-inner">
-      <a href="#" class="logo" aria-label="Aegis Security home">
-        <img src="assets/aegis_logo.png" alt="Aegis Security" class="logo-img">
+    <div class="nav-wrap">
+
+      <a href="#" class="nav-logo" aria-label="Aegis Security — home">
+        <img src="assets/aegis_logo.png" alt="Aegis Security">
       </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
+
+      <button class="nav-burger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links" role="list">
+
+      <ul class="nav-menu" role="list">
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#safety-check" class="btn btn-primary">Free Audit</a></li>
+        <li><a href="#contact" class="btn btn-primary">Free Audit</a></li>
       </ul>
+
     </div>
   </div>
 </nav>
 
 
-<!-- HERO -->
+<!-- ═══════════════════════════ HERO ═════════════════════ -->
 <section class="hero" aria-labelledby="hero-h1">
-  <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-corner tl" aria-hidden="true"></div>
-  <div class="hero-corner br" aria-hidden="true"></div>
-  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grid"  aria-hidden="true"></div>
+  <div class="hero-glow"  aria-hidden="true"></div>
 
   <div class="container">
-    <div class="hero-content">
-      <div class="hero-tagline">Fortifying Your Digital Frontier</div>
+    <div class="hero-inner">
 
-      <h1 id="hero-h1">
-        Real Threats.<br>
-        Real Protection.
-      </h1>
+      <!-- Copy -->
+      <div class="hero-text">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span>Professional Cybersecurity Services</span>
+        </div>
 
-      <p class="hero-sub">
-        43% of cyberattacks target businesses that have no security in place.
-        Aegis delivers professional-grade protection — without the enterprise price tag.
-      </p>
+        <h1 id="hero-h1">Protect What<br>You've <span class="hl">Built.</span></h1>
 
-      <div class="hero-cta">
-        <a href="#safety-check" class="btn btn-primary">
-          Get a Free Security Audit
-        </a>
-        <a href="#services" class="btn btn-ghost">Our Services</a>
+        <p class="hero-sub">
+          Most cyberattacks succeed not because defences are impossible — but because
+          none were in place. Aegis delivers professional-grade security for organisations
+          that can't afford to be vulnerable.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact"  class="btn btn-primary">Get a Free Security Audit</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
       </div>
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">43%</span>
-          <span class="stat-label">of attacks target businesses with no security</span>
+      <!-- Aside: service cards -->
+      <div class="hero-aside" aria-hidden="true">
+
+        <div class="ha-card">
+          <div class="ha-icon">
+            <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <div>
+            <span class="ha-label">Website Security Audit</span>
+            <span class="ha-sub">Scan, identify, fix — clear PDF report</span>
+          </div>
         </div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num">48hr</span>
-          <span class="stat-label">free audit report turnaround</span>
+
+        <div class="ha-card">
+          <div class="ha-icon">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <span class="ha-label">Email Security Setup</span>
+            <span class="ha-sub">SPF · DKIM · DMARC configured</span>
+          </div>
         </div>
-        <div class="stat-divider" aria-hidden="true"></div>
-        <div class="stat-item">
-          <span class="stat-num">6</span>
-          <span class="stat-label">core protection services</span>
+
+        <div class="ha-card">
+          <div class="ha-icon">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <span class="ha-label">Phishing Awareness Training</span>
+            <span class="ha-sub">Live 60-min session for your team</span>
+          </div>
         </div>
+
+        <div class="ha-card">
+          <div class="ha-icon">
+            <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <span class="ha-label">Account &amp; Password Security</span>
+            <span class="ha-sub">2FA · leaked credential checks</span>
+          </div>
+        </div>
+
+        <div class="ha-card">
+          <div class="ha-icon">
+            <svg class="ic" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <span class="ha-label">Monthly Security Check-in</span>
+            <span class="ha-sub">Ongoing monitoring &amp; reports</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- TICKER -->
-<div class="svc-ticker" aria-hidden="true">
-  <div class="ticker-inner">
-    <div class="ticker-label">Services</div>
-    <div class="ticker-track">
-      <div class="ticker-scroll">
-        <span class="t-item">Website Security Audit</span>
-        <span class="t-item">Password &amp; Account Security</span>
-        <span class="t-item">Email Security Setup</span>
-        <span class="t-item">Phishing Awareness Training</span>
-        <span class="t-item">Data Backup Assessment</span>
-        <span class="t-item">Monthly Security Check-in</span>
-        <span class="t-item">Website Security Audit</span>
-        <span class="t-item">Password &amp; Account Security</span>
-        <span class="t-item">Email Security Setup</span>
-        <span class="t-item">Phishing Awareness Training</span>
-        <span class="t-item">Data Backup Assessment</span>
-        <span class="t-item">Monthly Security Check-in</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- SERVICES -->
-<section id="services" aria-labelledby="services-h2">
+<!-- ═══════════════════════════ SERVICES ═════════════════ -->
+<section id="services" aria-labelledby="srv-h2">
   <div class="container">
-    <div class="section-head center fade-up">
+
+    <div class="section-label reveal">
       <div class="eyebrow">What We Do</div>
-      <h2 id="services-h2">Six Ways We Protect Your Business</h2>
+      <h2 id="srv-h2">Six Ways We Protect Your Organisation</h2>
       <p>No bloated packages. No jargon. Just the services that actually matter.</p>
     </div>
 
-    <div class="services-grid">
+    <div class="srv-grid">
 
-      <div class="s-card fade-up d1">
-        <span class="s-num">01</span>
-        <div class="s-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-          </svg>
-        </div>
+      <div class="srv reveal d1">
+        <span class="srv-n">01 — WEBSITE</span>
+        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
         <h3>Website Security Audit</h3>
         <p>We scan your website for vulnerabilities and deliver a clear, plain-language report with exact steps to fix every issue found.</p>
-        <ul class="s-list">
+        <ul class="srv-list">
           <li>SQL injection &amp; XSS testing</li>
           <li>SSL / HTTPS verification</li>
           <li>Outdated plugins &amp; CMS checks</li>
           <li>Security headers analysis</li>
-          <li>PDF report with fix steps</li>
+          <li>PDF report with remediation steps</li>
         </ul>
       </div>
 
-      <div class="s-card fade-up d2">
-        <span class="s-num">02</span>
-        <div class="s-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="11" width="18" height="11" rx="2"/>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-          </svg>
-        </div>
+      <div class="srv reveal d2">
+        <span class="srv-n">02 — ACCOUNTS</span>
+        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
         <h3>Password &amp; Account Security</h3>
-        <p>Most breaches start with a weak or reused password. We audit your access controls and harden them before attackers find the gap.</p>
-        <ul class="s-list">
+        <p>Most breaches start with a weak or reused password. We audit access controls and harden them before attackers find the gap.</p>
+        <ul class="srv-list">
           <li>Password policy review &amp; setup</li>
           <li>Two-factor authentication (2FA)</li>
           <li>Leaked credential checks</li>
@@ -157,17 +169,12 @@
         </ul>
       </div>
 
-      <div class="s-card fade-up d3">
-        <span class="s-num">03</span>
-        <div class="s-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-        </div>
+      <div class="srv reveal d3">
+        <span class="srv-n">03 — EMAIL</span>
+        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
         <h3>Email Security Setup</h3>
         <p>Stop attackers from impersonating your domain. We configure the technical records that make your email trustworthy and hard to spoof.</p>
-        <ul class="s-list">
+        <ul class="srv-list">
           <li>SPF, DKIM &amp; DMARC setup</li>
           <li>Domain spoofing check</li>
           <li>Anti-spam filter configuration</li>
@@ -176,56 +183,40 @@
         </ul>
       </div>
 
-      <div class="s-card fade-up d4">
-        <span class="s-num">04</span>
-        <div class="s-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-        </div>
+      <div class="srv reveal d4">
+        <span class="srv-n">04 — PEOPLE</span>
+        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Phishing Awareness Training</h3>
-        <p>Your team is your biggest vulnerability. One well-timed click can bring down an entire operation. We make sure your people know exactly what to look for.</p>
-        <ul class="s-list">
+        <p>Your team is your biggest vulnerability. One well-timed click can bring down an entire operation. We make sure your people know what to look for.</p>
+        <ul class="srv-list">
           <li>60-min live training session</li>
           <li>Real phishing examples &amp; red flags</li>
-          <li>What to do if you click a link</li>
+          <li>Incident response guidance</li>
           <li>Security do's &amp; don'ts handout</li>
           <li>Remote or in-person delivery</li>
         </ul>
       </div>
 
-      <div class="s-card fade-up d5">
-        <span class="s-num">05</span>
-        <div class="s-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" aria-hidden="true">
-            <ellipse cx="12" cy="5" rx="9" ry="3"/>
-            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-          </svg>
-        </div>
+      <div class="srv reveal d5">
+        <span class="srv-n">05 — DATA</span>
+        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
         <h3>Data Backup Assessment</h3>
-        <p>If ransomware hits tomorrow, can your business recover? We find out — and help you fix it before it ever becomes a question that matters.</p>
-        <ul class="s-list">
+        <p>If ransomware hits tomorrow, can your business recover? We find out — and help you fix it before it ever becomes a critical question.</p>
+        <ul class="srv-list">
           <li>Backup strategy review (3-2-1)</li>
           <li>Recovery reliability testing</li>
           <li>Cloud vs. local recommendation</li>
-          <li>Automated schedule setup guidance</li>
+          <li>Automated schedule guidance</li>
           <li>Disaster recovery action plan</li>
         </ul>
       </div>
 
-      <div class="s-card fade-up d6">
-        <span class="s-num">06</span>
-        <div class="s-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" aria-hidden="true">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-          </svg>
-        </div>
+      <div class="srv reveal d6">
+        <span class="srv-n">06 — ONGOING</span>
+        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         <h3>Monthly Security Check-in</h3>
         <p>Ongoing protection on a simple monthly retainer. We monitor, update, and report so security stays completely off your plate.</p>
-        <ul class="s-list">
+        <ul class="srv-list">
           <li>Software &amp; plugin update checks</li>
           <li>Login activity review</li>
           <li>New vulnerability alerts</li>
@@ -239,171 +230,81 @@
 </section>
 
 
-<!-- ABOUT -->
+<!-- ═══════════════════════════ ABOUT ════════════════════ -->
 <section id="about" aria-labelledby="about-h2">
   <div class="container">
-    <div class="about-grid">
+    <div class="about-layout">
 
-      <div class="about-text fade-up">
+      <div class="about-copy reveal">
         <div class="eyebrow">Who We Are</div>
         <h2 id="about-h2">Security That Speaks Your Language</h2>
-        <p>Most businesses are told cybersecurity is either too complex or too expensive for them. We built Aegis to prove both of those things wrong.</p>
-        <p>We translate technical risk into plain language — so you understand what's exposed, what we did about it, and what to watch going forward. No jargon. No scare tactics.</p>
+        <p>Most organisations are told that professional cybersecurity is either too complex or too expensive for them. We built Aegis to prove both of those things wrong.</p>
+        <p>We translate technical risk into plain language — so you understand exactly what's exposed, what we did about it, and what to watch going forward.</p>
 
-        <ul class="about-list">
+        <ul class="about-items">
           <li>
-            <span class="al-num">01</span>
+            <span class="ai-num">01</span>
             <div>
-              <span class="al-title">We audit first, talk later</span>
+              <span class="ai-title">We audit first, talk later</span>
               Free assessment before any commitment. You see the risks, then decide.
             </div>
           </li>
           <li>
-            <span class="al-num">02</span>
+            <span class="ai-num">02</span>
             <div>
-              <span class="al-title">Reports written for decision makers</span>
+              <span class="ai-title">Reports written for decision makers</span>
               Every finding is documented so anyone can read it — no IT background needed.
             </div>
           </li>
           <li>
-            <span class="al-num">03</span>
+            <span class="ai-num">03</span>
             <div>
-              <span class="al-title">A real person answers</span>
+              <span class="ai-title">A real person answers</span>
               Direct contact, not a ticket queue. We're reachable when it actually matters.
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="about-visual fade-up d2">
-        <div class="av-heading">What Sets Us Apart</div>
-
-        <div class="av-row">
-          <div class="av-icon">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div class="av-body">
-            <strong>Priced to be accessible</strong>
-            <span>Enterprise techniques without the enterprise invoice.</span>
-          </div>
+      <div class="about-panel reveal d2">
+        <div class="panel-hd">
+          <span>What Sets Aegis Apart</span>
+          <div class="panel-dots"><span></span><span></span><span></span></div>
         </div>
 
-        <div class="av-row">
-          <div class="av-icon">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        <div class="panel-row">
+          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="p-body">
+            <strong>Priced to be accessible</strong>
+            <span>Enterprise techniques, without the enterprise invoice.</span>
           </div>
-          <div class="av-body">
+        </div>
+        <div class="panel-row">
+          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="p-body">
             <strong>Fix, don't just flag</strong>
             <span>We walk you through resolving every issue we find.</span>
           </div>
         </div>
-
-        <div class="av-row">
-          <div class="av-icon">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div class="av-body">
+        <div class="panel-row">
+          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="p-body">
             <strong>Proactive, not reactive</strong>
             <span>We find vulnerabilities before attackers do — not after.</span>
           </div>
         </div>
-
-        <div class="av-row">
-          <div class="av-icon">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <div class="av-body">
+        <div class="panel-row">
+          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="p-body">
             <strong>No lock-in contracts</strong>
             <span>Stay because we're useful, not because you're stuck.</span>
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- WHY US -->
-<section id="why-us" aria-labelledby="why-h2">
-  <div class="container">
-    <div class="section-head fade-up">
-      <div class="eyebrow">Why Aegis</div>
-      <h2 id="why-h2">The Difference That Matters</h2>
-    </div>
-
-    <div class="why-grid fade-up d1">
-      <div class="why-card">
-        <div class="wc-num">01</div>
-        <h3>Built for Real Businesses</h3>
-        <p>Security shouldn't only be accessible to companies with a full IT department. We make professional-grade protection available to any organisation that needs it.</p>
-      </div>
-      <div class="why-card">
-        <div class="wc-num">02</div>
-        <h3>Zero Jargon Policy</h3>
-        <p>Every report, every call, every recommendation is delivered in plain English. You'll know exactly what the risk is and what we did to close it.</p>
-      </div>
-      <div class="why-card">
-        <div class="wc-num">03</div>
-        <h3>We Fix, Not Just Flag</h3>
-        <p>A list of problems without solutions is useless. We give you a prioritised, step-by-step remediation plan for every finding in your audit.</p>
-      </div>
-      <div class="why-card">
-        <div class="wc-num">04</div>
-        <h3>Long-Term Partnership</h3>
-        <p>Threats evolve every month. Our ongoing check-in keeps your defences current so you're never caught off guard by a new vulnerability.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- FORM -->
-<section id="safety-check" aria-labelledby="audit-h2">
-  <div class="container">
-    <div class="form-layout">
-
-      <div class="form-left fade-up">
-        <div class="eyebrow">Free Audit</div>
-        <h2 id="audit-h2">Let's See Where You Stand</h2>
-        <p>Tell us about your business and we'll run a free security assessment. No commitment, no sales pitch — just an honest look at what's exposed.</p>
-
-        <ul class="form-promises">
-          <li class="fp-row"><span class="fp-dash"></span>100% free — no credit card, no catch</li>
-          <li class="fp-row"><span class="fp-dash"></span>Report delivered within 48 hours</li>
-          <li class="fp-row"><span class="fp-dash"></span>Your information is never shared or sold</li>
-          <li class="fp-row"><span class="fp-dash"></span>We share findings first — no sales pitch</li>
-        </ul>
-      </div>
-
-      <div class="fade-up d2">
-        <div class="form-card">
-          <div class="form-card-title">Request Free Security Audit</div>
-          <form id="google-form" novalidate>
-            <div class="form-group">
-              <label class="form-label" for="f-name">Full Name</label>
-              <input id="f-name" type="text" name="entry.1079675005" class="form-input" placeholder="Your name" required autocomplete="name">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="f-company">Business Name</label>
-              <input id="f-company" type="text" name="entry.1174374992" class="form-input" placeholder="Your business name" autocomplete="organization">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="f-contact">Email or WhatsApp Number</label>
-              <input id="f-contact" type="text" name="entry.795685209" class="form-input" placeholder="How to reach you" required autocomplete="email">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="f-details">Main concern <span class="form-optional">(optional)</span></label>
-              <textarea id="f-details" name="entry.1929013246" class="form-input" placeholder="e.g. We have a WordPress site and aren't sure if it's secure, or we recently received a suspicious email…"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">Send My Request</button>
-          </form>
-          <div id="form-success" role="alert">
-            <div class="success-icon">
-              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p>Request Received</p>
-            <span>We'll be in touch within 48 hours with your findings.</span>
+        <div class="panel-row">
+          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="p-body">
+            <strong>48-hour report delivery</strong>
+            <span>Results in hand before you've had a chance to worry.</span>
           </div>
         </div>
       </div>
@@ -413,56 +314,178 @@
 </section>
 
 
-<!-- FOOTER -->
-<footer id="contact">
+<!-- ═══════════════════════════ WHY US ═══════════════════ -->
+<section id="why-us" aria-labelledby="why-h2">
   <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="assets/aegis_logo.png" alt="Aegis Security" class="footer-logo-img">
+
+    <div class="why-header reveal">
+      <div>
+        <div class="eyebrow">Why Aegis</div>
+        <h2 id="why-h2">The Difference That Matters</h2>
+      </div>
+      <p>Built around one idea: security should be something every organisation can access, understand, and actually use.</p>
+    </div>
+
+    <div class="why-grid reveal d1">
+      <div class="why-card">
+        <span class="wn">01</span>
+        <h3>Built for Real Business</h3>
+        <p>Security shouldn't only be accessible to companies with a full IT department. We make professional-grade protection available to any organisation that needs it.</p>
+        <span class="wbg" aria-hidden="true">01</span>
+      </div>
+      <div class="why-card">
+        <span class="wn">02</span>
+        <h3>Zero Jargon Policy</h3>
+        <p>Every report, every call, every recommendation is delivered in plain English. You'll know exactly what the risk is and what we did to close it.</p>
+        <span class="wbg" aria-hidden="true">02</span>
+      </div>
+      <div class="why-card">
+        <span class="wn">03</span>
+        <h3>We Fix, Not Just Flag</h3>
+        <p>A list of problems without solutions is useless. We give you a prioritised, step-by-step remediation plan for every finding in your audit.</p>
+        <span class="wbg" aria-hidden="true">03</span>
+      </div>
+      <div class="why-card">
+        <span class="wn">04</span>
+        <h3>Long-Term Partnership</h3>
+        <p>Threats evolve every month. Our ongoing check-in keeps your defences current so you're never caught off guard by something new.</p>
+        <span class="wbg" aria-hidden="true">04</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ CONTACT ══════════════════ -->
+<section id="contact" aria-labelledby="contact-h2">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-copy reveal">
+        <div class="eyebrow">Free Audit</div>
+        <h2 id="contact-h2">Let's See Where You Stand</h2>
+        <p>Tell us about your business and we'll run a free security assessment — no commitment, no sales pitch, just an honest look at what's exposed.</p>
+
+        <ul class="promises">
+          <li class="promise">
+            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            100% free — no credit card, no catch
+          </li>
+          <li class="promise">
+            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Report delivered within 48 hours
+          </li>
+          <li class="promise">
+            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Your information is never shared or sold
+          </li>
+          <li class="promise">
+            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Findings first — no sales pitch on the call
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal d2">
+        <div class="form-card">
+          <div class="form-card-hd">Request Free Security Audit</div>
+          <div class="form-body">
+            <form id="aegis-form" novalidate>
+              <div class="fg">
+                <label class="fl" for="f-name">Full Name</label>
+                <input id="f-name" type="text" name="entry.1079675005" class="fi" placeholder="Your name" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="f-org">Organisation Name</label>
+                <input id="f-org" type="text" name="entry.1174374992" class="fi" placeholder="Your organisation" autocomplete="organization">
+              </div>
+              <div class="fg">
+                <label class="fl" for="f-contact">Email or WhatsApp</label>
+                <input id="f-contact" type="text" name="entry.795685209" class="fi" placeholder="How to reach you" required autocomplete="email">
+              </div>
+              <div class="fg">
+                <label class="fl" for="f-detail">
+                  Main Concern
+                  <span style="font-weight:300;opacity:.45;margin-left:4px;">(optional)</span>
+                </label>
+                <textarea id="f-detail" name="entry.1929013246" class="fi" placeholder="e.g. We have a WordPress site and aren't sure if it's secure, or we recently received a suspicious email…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn">Send Request</button>
+            </form>
+
+            <div id="form-ok" role="alert">
+              <div class="ok-icon">
+                <svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <p>Request Received</p>
+              <span>We'll be in touch within 48 hours.</span>
+            </div>
+          </div>
         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════ -->
+<footer aria-label="Site footer">
+  <div class="container">
+
+    <div class="footer-grid">
+      <div class="f-brand">
+        <div class="f-logo"><img src="assets/aegis_logo.png" alt="Aegis Security"></div>
         <p>Cybersecurity for organisations that can't afford to be vulnerable.</p>
       </div>
 
-      <div class="footer-col">
+      <div class="f-col">
         <h4>Services</h4>
         <ul>
           <li><a href="#services">Website Security Audit</a></li>
           <li><a href="#services">Password &amp; Account Security</a></li>
           <li><a href="#services">Email Security Setup</a></li>
-          <li><a href="#services">Phishing Training</a></li>
+          <li><a href="#services">Phishing Awareness Training</a></li>
           <li><a href="#services">Data Backup Assessment</a></li>
           <li><a href="#services">Monthly Check-in</a></li>
         </ul>
       </div>
 
-      <div class="footer-col">
-        <h4>Contact</h4>
+      <div class="f-col">
+        <h4>Company</h4>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#why-us">Why Aegis</a></li>
-          <li><a href="#safety-check">Free Audit</a></li>
+          <li><a href="#contact">Free Audit</a></li>
           <li><a href="mailto:adwaithur.contact@gmail.com">Email Us</a></li>
-          <!-- <li><a href="https://wa.me/000000000" target="_blank" rel="noopener">WhatsApp</a></li> -->
           <li><a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-btm">
       <span>&copy; 2026 Aegis Security. All rights reserved.</span>
-      <div class="footer-socials">
-        <a href="mailto:adwaithur.contact@gmail.com" class="social-link" aria-label="Email">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <div class="f-socials">
+
+        <a href="mailto:adwaithur.contact@gmail.com" class="f-soc" aria-label="Email">
+          <svg class="ic" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
         </a>
-        <!-- <a href="https://wa.me/0000000000" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </a> -->
-        <a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+
+        <a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener" class="f-soc" aria-label="LinkedIn">
+          <svg class="ic" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
         </a>
+
       </div>
     </div>
+
   </div>
 </footer>
 
