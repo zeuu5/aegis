@@ -1,311 +1,650 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aegis Security — professional cybersecurity services. Website audits, phishing training, email security setup, and ongoing protection.">
-  <meta property="og:title"       content="Aegis Security | Startup Cybersecurity Services">
-  <meta property="og:description" content="Professional cybersecurity without the enterprise price tag.">
+
+  <!-- ═══════════════════════════════════════════════
+       PRIMARY META — TARGET KEYWORD: "cybersecurity services for small business"
+  ═══════════════════════════════════════════════ -->
+  <title>Aegis Security | Cybersecurity Services for Small & Mid-Size Businesses</title>
+  <meta name="description" content="Aegis Security provides affordable, professional cybersecurity services for small and mid-size businesses — including website security audits, email protection, phishing training, and ongoing monitoring. Free security assessment available.">
+  <meta name="keywords" content="cybersecurity services, small business cybersecurity, website security audit, phishing training, email security setup, data backup assessment, affordable cybersecurity, cyber protection">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Aegis Security">
+  <link rel="canonical" href="https://aegissecurity.in/">
+
+  <!-- ═══════════════════════════════════════════════
+       OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+  ═══════════════════════════════════════════════ -->
   <meta property="og:type"        content="website">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <title>Aegis Security | Startup Cybersecurity Services</title>
+  <meta property="og:url"         content="https://aegissecurity.in/">
+  <meta property="og:title"       content="Aegis Security | Cybersecurity for Small & Mid-Size Businesses">
+  <meta property="og:description" content="Professional cybersecurity services without the enterprise price tag. Website audits, email security, phishing training & more. Free audit available.">
+  <meta property="og:image"       content="https://aegissecurity.in/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"   content="Aegis Security — Cybersecurity Services">
+  <meta property="og:site_name"   content="Aegis Security">
+  <meta property="og:locale"      content="en_IN">
+
+  <!-- ═══════════════════════════════════════════════
+       TWITTER CARD
+  ═══════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@aegissecurity">
+  <meta name="twitter:title"       content="Aegis Security | Cybersecurity for Small & Mid-Size Businesses">
+  <meta name="twitter:description" content="Professional cybersecurity without the enterprise price tag. Free security audit available.">
+  <meta name="twitter:image"       content="https://aegissecurity.in/assets/og-image.png">
+  <meta name="twitter:image:alt"   content="Aegis Security — Cybersecurity Services">
+
+  <!-- ═══════════════════════════════════════════════
+       GEO / LOCAL SEO (Kerala, India)
+  ═══════════════════════════════════════════════ -->
+  <meta name="geo.region"      content="IN-KL">
+  <meta name="geo.placename"   content="Kerala, India">
+  <meta name="geo.position"    content="10.8505;76.2711">
+  <meta name="ICBM"            content="10.8505, 76.2711">
+
+  <!-- ═══════════════════════════════════════════════
+       FAVICON SET
+  ═══════════════════════════════════════════════ -->
+  <link rel="icon"             type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="icon"             type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="icon"             type="image/png" sizes="16x16" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180"               href="assets/apple-touch-icon.png">
+  <link rel="manifest"                                        href="site.webmanifest">
+  <meta name="theme-color"   content="#040507">
+  <meta name="msapplication-TileColor" content="#040507">
+
+  <!-- ═══════════════════════════════════════════════
+       PERFORMANCE — FONT PRELOAD
+  ═══════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,300&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,300&family=Bebas+Neue&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA — ORGANIZATION
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://aegissecurity.in/#organization",
+    "name": "Aegis Security",
+    "alternateName": "Aegis Cybersecurity",
+    "url": "https://aegissecurity.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aegissecurity.in/assets/aegis_logo.png",
+      "width": 400,
+      "height": 100
+    },
+    "image": "https://aegissecurity.in/assets/og-image.png",
+    "description": "Aegis Security provides affordable, professional cybersecurity services for small and mid-size businesses, including website security audits, email protection, phishing awareness training, and ongoing monthly monitoring.",
+    "founder": {
+      "@type": "Person",
+      "name": "Adwaith U R",
+      "url": "https://www.linkedin.com/in/adwaithur"
+    },
+    "email": "adwaithur.contact@gmail.com",
+    "areaServed": [
+      { "@type": "Country", "name": "India" }
+    ],
+    "serviceType": [
+      "Website Security Audit",
+      "Email Security Setup",
+      "Phishing Awareness Training",
+      "Password and Account Security",
+      "Data Backup Assessment",
+      "Monthly Security Monitoring"
+    ],
+    "knowsAbout": [
+      "Cybersecurity",
+      "Network Security",
+      "Email Security",
+      "Phishing Prevention",
+      "Data Backup",
+      "DMARC Setup",
+      "Vulnerability Assessment"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/adwaithur",
+      "mailto:adwaithur.contact@gmail.com"
+    ],
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Bank Transfer, UPI",
+    "openingHours": "Mo-Fr 09:00-18:00"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA — WEBPAGE
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://aegissecurity.in/#webpage",
+    "url": "https://aegissecurity.in/",
+    "name": "Aegis Security | Cybersecurity Services for Small & Mid-Size Businesses",
+    "isPartOf": { "@id": "https://aegissecurity.in/#website" },
+    "about": { "@id": "https://aegissecurity.in/#organization" },
+    "description": "Affordable, professional cybersecurity services for businesses. Free security audit available.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aegissecurity.in/" }
+      ]
+    },
+    "inLanguage": "en-IN"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA — WEBSITE (Sitelinks search)
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://aegissecurity.in/#website",
+    "url": "https://aegissecurity.in/",
+    "name": "Aegis Security",
+    "description": "Cybersecurity services for small and mid-size businesses",
+    "publisher": { "@id": "https://aegissecurity.in/#organization" },
+    "inLanguage": "en-IN"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA — SERVICES LIST
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Aegis Security Services",
+    "description": "Professional cybersecurity services for small and mid-size businesses",
+    "itemListElement": [
+      {
+        "@type": "ListItem", "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Website Security Audit",
+          "description": "Comprehensive scan of your website for SQL injection, XSS, SSL issues, outdated plugins and security headers. Delivered as a plain-language PDF report with exact remediation steps.",
+          "provider": { "@id": "https://aegissecurity.in/#organization" },
+          "serviceType": "Website Security Audit",
+          "areaServed": { "@type": "Country", "name": "India" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Password & Account Security",
+          "description": "Audit of access controls including password policies, two-factor authentication setup, leaked credential checks, and shared account risk assessment.",
+          "provider": { "@id": "https://aegissecurity.in/#organization" },
+          "serviceType": "Account Security",
+          "areaServed": { "@type": "Country", "name": "India" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Email Security Setup",
+          "description": "Configuration of SPF, DKIM and DMARC records to prevent domain spoofing and email impersonation. Includes anti-spam filter setup and phishing exposure assessment.",
+          "provider": { "@id": "https://aegissecurity.in/#organization" },
+          "serviceType": "Email Security",
+          "areaServed": { "@type": "Country", "name": "India" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 4,
+        "item": {
+          "@type": "Service",
+          "name": "Phishing Awareness Training",
+          "description": "60-minute live training session for your team covering real phishing examples, red flags, incident response guidance, and security best practices. Available remotely or in person.",
+          "provider": { "@id": "https://aegissecurity.in/#organization" },
+          "serviceType": "Security Awareness Training",
+          "areaServed": { "@type": "Country", "name": "India" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 5,
+        "item": {
+          "@type": "Service",
+          "name": "Data Backup Assessment",
+          "description": "Review of your backup strategy using the 3-2-1 method, recovery reliability testing, cloud vs local recommendations, and a disaster recovery action plan.",
+          "provider": { "@id": "https://aegissecurity.in/#organization" },
+          "serviceType": "Data Backup Assessment",
+          "areaServed": { "@type": "Country", "name": "India" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 6,
+        "item": {
+          "@type": "Service",
+          "name": "Monthly Security Check-in",
+          "description": "Ongoing monthly retainer covering software and plugin updates, login activity review, new vulnerability alerts, a monthly summary report and a direct support line.",
+          "provider": { "@id": "https://aegissecurity.in/#organization" },
+          "serviceType": "Managed Security Services",
+          "areaServed": { "@type": "Country", "name": "India" }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA — FAQ (boosts SERP rich results)
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a small business cybersecurity audit cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aegis Security offers a completely free initial security assessment with no credit card required. Our paid services are priced to be accessible for small and mid-size businesses — significantly below enterprise rates. Contact us to discuss options specific to your needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a website security audit take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our website security audit delivers a complete plain-language PDF report within 48 hours of starting the assessment. The report includes every vulnerability found and exact steps to fix each one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is phishing awareness training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Phishing awareness training is a 60-minute live session for your team that covers how to recognise phishing emails, real-world examples, what to do if you accidentally click a suspicious link, and security best practices. It is available remotely or in person."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is DMARC and why does my business need it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DMARC (Domain-based Message Authentication, Reporting and Conformance) is an email authentication standard that prevents attackers from sending emails that appear to come from your domain. Without it, scammers can impersonate your business to target your clients. Aegis sets up SPF, DKIM and DMARC as part of the Email Security Setup service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to sign a long-term contract?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Aegis Security has no lock-in contracts. You can use individual services as one-time engagements or opt for a monthly check-in retainer. You stay because the service is useful, not because you are contractually obligated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is cybersecurity really necessary for small businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. 43% of cyberattacks specifically target small and mid-size businesses, and the average cost of a breach for a small business can be devastating. Most attacks succeed not because defences are impossible to build, but because none were in place. Aegis makes professional-grade protection accessible and affordable."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA — OFFER (Free Audit)
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "name": "Free Cybersecurity Assessment",
+    "description": "A free security assessment for your business — no commitment, no credit card required. Report delivered within 48 hours.",
+    "price": "0",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "seller": { "@id": "https://aegissecurity.in/#organization" },
+    "validFrom": "2026-01-01",
+    "url": "https://aegissecurity.in/#contact"
+  }
+  </script>
+
 </head>
 <body>
 
-<!-- ═══════════════════════════ NAVBAR ═══════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
 <nav class="navbar" aria-label="Main navigation">
   <div class="container">
-    <div class="nav-wrap">
-
-      <a href="#" class="nav-logo" aria-label="Aegis Security — home">
-        <img src="assets/aegis_logo.png" alt="Aegis Security">
+    <div class="nav-inner">
+      <a href="/" class="logo" aria-label="Aegis Security — return to homepage">
+        <img src="assets/aegis_logo.png"
+             alt="Aegis Security logo"
+             class="logo-img"
+             width="200" height="56"
+             loading="eager"
+             fetchpriority="high">
       </a>
-
-      <button class="nav-burger" aria-label="Open navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </button>
-
-      <ul class="nav-menu" role="list">
+      <ul class="nav-links" id="nav-menu" role="list">
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#contact" class="btn btn-primary">Free Audit</a></li>
+        <li><a href="#contact" class="btn btn-solid"><span>Free Audit</span></a></li>
       </ul>
-
     </div>
   </div>
 </nav>
 
 
-<!-- ═══════════════════════════ HERO ═════════════════════ -->
-<section class="hero" aria-labelledby="hero-h1">
-  <div class="hero-grid"  aria-hidden="true"></div>
-  <div class="hero-glow"  aria-hidden="true"></div>
+<!-- ═══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<header class="hero" aria-labelledby="hero-h1">
+  <div class="hero-atmosphere" aria-hidden="true"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="hero-ghost-text" aria-hidden="true">AE</div>
 
   <div class="container">
-    <div class="hero-inner">
+    <div class="hero-content">
 
-      <!-- Copy -->
-      <div class="hero-text">
-        <div class="hero-pill">
-          <span class="hero-pill-dot"></span>
-          <span>Professional Cybersecurity Services</span>
+      <div class="hero-status" role="note">
+        <div class="status-dot" aria-hidden="true"></div>
+        <span>Now Accepting New Clients — Free Assessment Available</span>
+      </div>
+
+      <div class="hero-h1-wrap">
+        <h1 id="hero-h1">
+          <span class="h1-line"><span>Protect What</span></span>
+          <span class="h1-line"><span>You've</span></span>
+          <span class="h1-line"><span>Built.</span></span>
+        </h1>
+      </div>
+
+      <p class="hero-sub">
+        43% of cyberattacks target businesses with no security in place.
+        Aegis delivers professional cybersecurity for small and mid-size businesses —
+        clear, affordable, and without the enterprise overhead.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-solid">
+          <span>Get a Free Security Audit</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#services" class="btn btn-ghost">View Services</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Key statistics">
+        <div class="stat-block">
+          <div class="stat-big"><span aria-hidden="true">43</span><em aria-hidden="true">%</em>
+            <span class="sr-only">43 percent</span>
+          </div>
+          <div class="stat-desc">of attacks hit unprotected businesses</div>
         </div>
-
-        <h1 id="hero-h1">Protect What<br>You've <span class="hl">Built.</span></h1>
-
-        <p class="hero-sub">
-          Most cyberattacks succeed not because defences are impossible — but because
-          none were in place. Aegis delivers professional-grade security for organisations
-          that can't afford to be vulnerable.
-        </p>
-
-        <div class="hero-btns">
-          <a href="#contact"  class="btn btn-primary">Get a Free Security Audit</a>
-          <a href="#services" class="btn btn-secondary">View Services</a>
+        <div class="stat-block">
+          <div class="stat-big"><span aria-hidden="true">48</span><em aria-hidden="true">hr</em>
+            <span class="sr-only">48 hours</span>
+          </div>
+          <div class="stat-desc">full audit report turnaround</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big"><span aria-hidden="true">6</span><em aria-hidden="true">+</em>
+            <span class="sr-only">6 or more</span>
+          </div>
+          <div class="stat-desc">specialist security services</div>
         </div>
       </div>
 
-      <!-- Aside: service cards -->
-      <div class="hero-aside" aria-hidden="true">
+    </div>
+  </div>
+</header>
 
-        <div class="ha-card">
-          <div class="ha-icon">
-            <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          </div>
-          <div>
-            <span class="ha-label">Website Security Audit</span>
-            <span class="ha-sub">Scan, identify, fix — clear PDF report</span>
-          </div>
-        </div>
 
-        <div class="ha-card">
-          <div class="ha-icon">
-            <svg class="ic" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <span class="ha-label">Email Security Setup</span>
-            <span class="ha-sub">SPF · DKIM · DMARC configured</span>
-          </div>
-        </div>
-
-        <div class="ha-card">
-          <div class="ha-icon">
-            <svg class="ic" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div>
-            <span class="ha-label">Phishing Awareness Training</span>
-            <span class="ha-sub">Live 60-min session for your team</span>
-          </div>
-        </div>
-
-        <div class="ha-card">
-          <div class="ha-icon">
-            <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          </div>
-          <div>
-            <span class="ha-label">Account &amp; Password Security</span>
-            <span class="ha-sub">2FA · leaked credential checks</span>
-          </div>
-        </div>
-
-        <div class="ha-card">
-          <div class="ha-icon">
-            <svg class="ic" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <div>
-            <span class="ha-label">Monthly Security Check-in</span>
-            <span class="ha-sub">Ongoing monitoring &amp; reports</span>
-          </div>
-        </div>
-
+<!-- ═══════════════════════════════════════════════
+     TICKER
+═══════════════════════════════════════════════ -->
+<div class="svc-ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <div class="ticker-label">Services</div>
+    <div class="ticker-track">
+      <div class="ticker-scroll">
+        <span class="t-item">Website Security Audit</span>
+        <span class="t-item">Password &amp; Account Security</span>
+        <span class="t-item">Email Security Setup</span>
+        <span class="t-item">Phishing Awareness Training</span>
+        <span class="t-item">Data Backup Assessment</span>
+        <span class="t-item">Monthly Security Check-in</span>
+        <span class="t-item">Website Security Audit</span>
+        <span class="t-item">Password &amp; Account Security</span>
+        <span class="t-item">Email Security Setup</span>
+        <span class="t-item">Phishing Awareness Training</span>
+        <span class="t-item">Data Backup Assessment</span>
+        <span class="t-item">Monthly Security Check-in</span>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 
-<!-- ═══════════════════════════ SERVICES ═════════════════ -->
-<section id="services" aria-labelledby="srv-h2">
+<!-- ═══════════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════════ -->
+<section id="services" aria-labelledby="services-h2">
   <div class="container">
-
-    <div class="section-label reveal">
-      <div class="eyebrow">What We Do</div>
-      <h2 id="srv-h2">Six Ways We Protect Your Organisation</h2>
-      <p>No bloated packages. No jargon. Just the services that actually matter.</p>
+    <div class="section-label-row reveal">
+      <div>
+        <div class="eyebrow">What We Do</div>
+        <h2 id="services-h2">Cybersecurity Services for<br>Small &amp; Mid-Size Businesses</h2>
+      </div>
+      <p class="section-desc">No bloated packages. No jargon. Six focused services that close the gaps attackers exploit most.</p>
     </div>
 
-    <div class="srv-grid">
+    <div class="services-grid">
 
-      <div class="srv reveal d1">
-        <span class="srv-n">01 — WEBSITE</span>
-        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+      <article class="s-card reveal rv-1" aria-label="Website Security Audit service">
+        <div class="s-meta">
+          <span class="s-tag">01 — Website</span>
+          <div class="s-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+        </div>
         <h3>Website Security Audit</h3>
-        <p>We scan your website for vulnerabilities and deliver a clear, plain-language report with exact steps to fix every issue found.</p>
-        <ul class="srv-list">
-          <li>SQL injection &amp; XSS testing</li>
-          <li>SSL / HTTPS verification</li>
-          <li>Outdated plugins &amp; CMS checks</li>
-          <li>Security headers analysis</li>
-          <li>PDF report with remediation steps</li>
+        <p>We scan your website for vulnerabilities and deliver a clear, plain-language PDF report with exact remediation steps for every issue found — no technical knowledge required to act on it.</p>
+        <ul class="s-list" aria-label="Included in Website Security Audit">
+          <li>SQL injection &amp; XSS vulnerability testing</li>
+          <li>SSL / HTTPS certificate verification</li>
+          <li>Outdated plugins &amp; CMS version checks</li>
+          <li>HTTP security headers analysis</li>
+          <li>PDF report with step-by-step fix instructions</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="srv reveal d2">
-        <span class="srv-n">02 — ACCOUNTS</span>
-        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <article class="s-card reveal rv-2" aria-label="Password and Account Security service">
+        <div class="s-meta">
+          <span class="s-tag">02 — Accounts</span>
+          <div class="s-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+        </div>
         <h3>Password &amp; Account Security</h3>
-        <p>Most breaches start with a weak or reused password. We audit access controls and harden them before attackers find the gap.</p>
-        <ul class="srv-list">
-          <li>Password policy review &amp; setup</li>
-          <li>Two-factor authentication (2FA)</li>
-          <li>Leaked credential checks</li>
-          <li>Password manager guidance</li>
+        <p>Over 80% of breaches involve compromised credentials. We audit your access controls, implement 2FA, and harden your accounts before attackers find the gap.</p>
+        <ul class="s-list" aria-label="Included in Account Security">
+          <li>Password policy review &amp; enforcement</li>
+          <li>Two-factor authentication (2FA) setup</li>
+          <li>Leaked credential database checks</li>
+          <li>Password manager guidance &amp; rollout</li>
           <li>Shared account risk assessment</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="srv reveal d3">
-        <span class="srv-n">03 — EMAIL</span>
-        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <article class="s-card reveal rv-3" aria-label="Email Security Setup service">
+        <div class="s-meta">
+          <span class="s-tag">03 — Email</span>
+          <div class="s-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+        </div>
         <h3>Email Security Setup</h3>
-        <p>Stop attackers from impersonating your domain. We configure the technical records that make your email trustworthy and hard to spoof.</p>
-        <ul class="srv-list">
-          <li>SPF, DKIM &amp; DMARC setup</li>
-          <li>Domain spoofing check</li>
+        <p>Stop attackers from impersonating your domain and tricking your clients. We configure SPF, DKIM and DMARC — the three records that make your email trusted and hard to spoof.</p>
+        <ul class="s-list" aria-label="Included in Email Security Setup">
+          <li>SPF, DKIM &amp; DMARC DNS configuration</li>
+          <li>Domain spoofing vulnerability check</li>
           <li>Anti-spam filter configuration</li>
-          <li>Business email best practices</li>
+          <li>Business email security best practices</li>
           <li>Phishing exposure assessment</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="srv reveal d4">
-        <span class="srv-n">04 — PEOPLE</span>
-        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <article class="s-card reveal rv-4" aria-label="Phishing Awareness Training service">
+        <div class="s-meta">
+          <span class="s-tag">04 — People</span>
+          <div class="s-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+        </div>
         <h3>Phishing Awareness Training</h3>
-        <p>Your team is your biggest vulnerability. One well-timed click can bring down an entire operation. We make sure your people know what to look for.</p>
-        <ul class="srv-list">
-          <li>60-min live training session</li>
-          <li>Real phishing examples &amp; red flags</li>
-          <li>Incident response guidance</li>
-          <li>Security do's &amp; don'ts handout</li>
-          <li>Remote or in-person delivery</li>
+        <p>Your team is your biggest vulnerability — and your best defence. One well-timed click can compromise an entire organisation. We train your people to recognise and report phishing attempts.</p>
+        <ul class="s-list" aria-label="Included in Phishing Training">
+          <li>60-minute live cybersecurity training session</li>
+          <li>Real phishing email examples &amp; red flags</li>
+          <li>Incident response: what to do after clicking</li>
+          <li>Security best practices handout</li>
+          <li>Available remotely or in person</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="srv reveal d5">
-        <span class="srv-n">05 — DATA</span>
-        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+      <article class="s-card reveal rv-5" aria-label="Data Backup Assessment service">
+        <div class="s-meta">
+          <span class="s-tag">05 — Data</span>
+          <div class="s-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+        </div>
         <h3>Data Backup Assessment</h3>
-        <p>If ransomware hits tomorrow, can your business recover? We find out — and help you fix it before it ever becomes a critical question.</p>
-        <ul class="srv-list">
-          <li>Backup strategy review (3-2-1)</li>
-          <li>Recovery reliability testing</li>
-          <li>Cloud vs. local recommendation</li>
-          <li>Automated schedule guidance</li>
+        <p>Ransomware attacks on businesses have doubled year-on-year. If you were hit tomorrow, could you recover? We test your backup reliability and build a plan that guarantees you can.</p>
+        <ul class="s-list" aria-label="Included in Data Backup Assessment">
+          <li>3-2-1 backup strategy review</li>
+          <li>Recovery time &amp; reliability testing</li>
+          <li>Cloud vs. local backup recommendation</li>
+          <li>Automated backup schedule guidance</li>
           <li>Disaster recovery action plan</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="srv reveal d6">
-        <span class="srv-n">06 — ONGOING</span>
-        <div class="srv-icon"><svg class="ic" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <article class="s-card reveal rv-6" aria-label="Monthly Security Check-in service">
+        <div class="s-meta">
+          <span class="s-tag">06 — Ongoing</span>
+          <div class="s-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+        </div>
         <h3>Monthly Security Check-in</h3>
-        <p>Ongoing protection on a simple monthly retainer. We monitor, update, and report so security stays completely off your plate.</p>
-        <ul class="srv-list">
-          <li>Software &amp; plugin update checks</li>
-          <li>Login activity review</li>
-          <li>New vulnerability alerts</li>
-          <li>Monthly summary report</li>
-          <li>Direct support line</li>
+        <p>New threats emerge every week. Our monthly retainer keeps your defences current, so security never falls off your radar — or your plate. No technical knowledge required on your end.</p>
+        <ul class="s-list" aria-label="Included in Monthly Check-in">
+          <li>Software &amp; plugin update verification</li>
+          <li>Login activity &amp; anomaly review</li>
+          <li>New vulnerability alerts &amp; advisories</li>
+          <li>Monthly plain-language summary report</li>
+          <li>Dedicated direct support line</li>
         </ul>
-      </div>
+      </article>
 
     </div>
   </div>
 </section>
 
 
-<!-- ═══════════════════════════ ABOUT ════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════ -->
 <section id="about" aria-labelledby="about-h2">
+  <div class="about-bg" aria-hidden="true"></div>
   <div class="container">
-    <div class="about-layout">
+    <div class="about-grid">
 
-      <div class="about-copy reveal">
+      <div class="about-text reveal">
         <div class="eyebrow">Who We Are</div>
-        <h2 id="about-h2">Security That Speaks Your Language</h2>
-        <p>Most organisations are told that professional cybersecurity is either too complex or too expensive for them. We built Aegis to prove both of those things wrong.</p>
-        <p>We translate technical risk into plain language — so you understand exactly what's exposed, what we did about it, and what to watch going forward.</p>
+        <h2 id="about-h2">Cybersecurity That Speaks Your Language</h2>
+        <p>Most organisations are told that professional cybersecurity is either too complex or too expensive. We built Aegis to prove both of those things wrong.</p>
+        <p>We translate technical risk into plain English — so you understand exactly what's exposed, what we did about it, and what to watch going forward. No jargon. No scare tactics. Just clarity.</p>
 
-        <ul class="about-items">
+        <ul class="about-list">
           <li>
-            <span class="ai-num">01</span>
+            <span class="al-num" aria-hidden="true">01</span>
             <div>
-              <span class="ai-title">We audit first, talk later</span>
-              Free assessment before any commitment. You see the risks, then decide.
+              <span class="al-title">We audit first, talk later</span>
+              Free assessment before any commitment. You see the risks clearly, then decide.
             </div>
           </li>
           <li>
-            <span class="ai-num">02</span>
+            <span class="al-num" aria-hidden="true">02</span>
             <div>
-              <span class="ai-title">Reports written for decision makers</span>
-              Every finding is documented so anyone can read it — no IT background needed.
+              <span class="al-title">Reports written for decision makers</span>
+              Every finding is documented in plain language — no IT background required to act on it.
             </div>
           </li>
           <li>
-            <span class="ai-num">03</span>
+            <span class="al-num" aria-hidden="true">03</span>
             <div>
-              <span class="ai-title">A real person answers</span>
+              <span class="al-title">A real person answers</span>
               Direct contact, not a ticket queue. We're reachable when it actually matters.
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="about-panel reveal d2">
-        <div class="panel-hd">
-          <span>What Sets Aegis Apart</span>
-          <div class="panel-dots"><span></span><span></span><span></span></div>
+      <div class="about-terminal reveal rv-2">
+        <div class="terminal-bar">
+          <span class="t-dot t-dot-r" aria-hidden="true"></span>
+          <span class="t-dot t-dot-y" aria-hidden="true"></span>
+          <span class="t-dot t-dot-g" aria-hidden="true"></span>
+          <span class="terminal-title">aegis — what sets us apart</span>
         </div>
-
-        <div class="panel-row">
-          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div class="p-body">
-            <strong>Priced to be accessible</strong>
-            <span>Enterprise techniques, without the enterprise invoice.</span>
+        <div class="t-row">
+          <div class="t-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
+          <div class="t-body"><strong>Priced for accessibility</strong><span>Enterprise techniques, without the enterprise invoice.</span></div>
         </div>
-        <div class="panel-row">
-          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div class="p-body">
-            <strong>Fix, don't just flag</strong>
-            <span>We walk you through resolving every issue we find.</span>
+        <div class="t-row">
+          <div class="t-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
+          <div class="t-body"><strong>Fix, don't just flag</strong><span>We walk you through resolving every issue we find.</span></div>
         </div>
-        <div class="panel-row">
-          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div class="p-body">
-            <strong>Proactive, not reactive</strong>
-            <span>We find vulnerabilities before attackers do — not after.</span>
+        <div class="t-row">
+          <div class="t-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
+          <div class="t-body"><strong>Proactive, not reactive</strong><span>We find vulnerabilities before attackers do — not after.</span></div>
         </div>
-        <div class="panel-row">
-          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div class="p-body">
-            <strong>No lock-in contracts</strong>
-            <span>Stay because we're useful, not because you're stuck.</span>
+        <div class="t-row">
+          <div class="t-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
+          <div class="t-body"><strong>No lock-in contracts</strong><span>Stay because we're useful, not because you're stuck.</span></div>
         </div>
-        <div class="panel-row">
-          <div class="p-chk"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div class="p-body">
-            <strong>48-hour report delivery</strong>
-            <span>Results in hand before you've had a chance to worry.</span>
+        <div class="t-row">
+          <div class="t-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
+          <div class="t-body"><strong>48-hour report delivery</strong><span>Results in hand before you've had time to worry.</span></div>
         </div>
       </div>
 
@@ -314,113 +653,215 @@
 </section>
 
 
-<!-- ═══════════════════════════ WHY US ═══════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     WHY US
+═══════════════════════════════════════════════ -->
 <section id="why-us" aria-labelledby="why-h2">
   <div class="container">
-
-    <div class="why-header reveal">
+    <div class="why-intro reveal">
       <div>
         <div class="eyebrow">Why Aegis</div>
-        <h2 id="why-h2">The Difference That Matters</h2>
+        <h2 id="why-h2">The Difference<br>That Matters</h2>
       </div>
-      <p>Built around one idea: security should be something every organisation can access, understand, and actually use.</p>
+      <p>We built Aegis around one principle: professional cybersecurity should be something every business can access, understand, and actually use.</p>
     </div>
 
-    <div class="why-grid reveal d1">
-      <div class="why-card">
-        <span class="wn">01</span>
-        <h3>Built for Real Business</h3>
-        <p>Security shouldn't only be accessible to companies with a full IT department. We make professional-grade protection available to any organisation that needs it.</p>
-        <span class="wbg" aria-hidden="true">01</span>
+    <div class="why-grid">
+      <div class="why-card reveal rv-1">
+        <span class="wc-tag">01 — Foundation</span>
+        <h3>Built for Real Businesses</h3>
+        <p>Professional security shouldn't require a full IT department. We deliver the same protections used by large enterprises — scaled to fit the needs and budgets of growing organisations.</p>
+        <span class="wc-ghost" aria-hidden="true">01</span>
       </div>
-      <div class="why-card">
-        <span class="wn">02</span>
+      <div class="why-card reveal rv-2">
+        <span class="wc-tag">02 — Clarity</span>
         <h3>Zero Jargon Policy</h3>
-        <p>Every report, every call, every recommendation is delivered in plain English. You'll know exactly what the risk is and what we did to close it.</p>
-        <span class="wbg" aria-hidden="true">02</span>
+        <p>Every report, every call, every recommendation is in plain English. You'll know exactly what the risk is and exactly what we did to close it — no translation layer required.</p>
+        <span class="wc-ghost" aria-hidden="true">02</span>
       </div>
-      <div class="why-card">
-        <span class="wn">03</span>
+      <div class="why-card reveal rv-3">
+        <span class="wc-tag">03 — Action</span>
         <h3>We Fix, Not Just Flag</h3>
-        <p>A list of problems without solutions is useless. We give you a prioritised, step-by-step remediation plan for every finding in your audit.</p>
-        <span class="wbg" aria-hidden="true">03</span>
+        <p>A list of problems without solutions is useless. Every audit includes a prioritised, step-by-step remediation plan for every finding — so you know exactly what to do next.</p>
+        <span class="wc-ghost" aria-hidden="true">03</span>
       </div>
-      <div class="why-card">
-        <span class="wn">04</span>
-        <h3>Long-Term Partnership</h3>
-        <p>Threats evolve every month. Our ongoing check-in keeps your defences current so you're never caught off guard by something new.</p>
-        <span class="wbg" aria-hidden="true">04</span>
+      <div class="why-card reveal rv-4">
+        <span class="wc-tag">04 — Partnership</span>
+        <h3>Long-Term Vigilance</h3>
+        <p>Cyber threats evolve every month. Our ongoing monthly check-in ensures your defences stay current, so you're never caught off guard by an emerging vulnerability.</p>
+        <span class="wc-ghost" aria-hidden="true">04</span>
       </div>
     </div>
-
   </div>
 </section>
 
 
-<!-- ═══════════════════════════ CONTACT ══════════════════ -->
-<section id="contact" aria-labelledby="contact-h2">
+<!-- ═══════════════════════════════════════════════
+     FAQ
+═══════════════════════════════════════════════ -->
+<section id="faq" aria-labelledby="faq-h2">
   <div class="container">
-    <div class="contact-layout">
+    <div class="section-label-row reveal" style="margin-bottom: 52px;">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2 id="faq-h2">Frequently Asked Questions</h2>
+      </div>
+      <p class="section-desc">Everything you need to know about getting started with Aegis Security.</p>
+    </div>
 
-      <div class="contact-copy reveal">
+    <div class="faq-grid reveal rv-1">
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          <h3>Is cybersecurity really necessary for small businesses?</h3>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>Yes — and significantly so. 43% of cyberattacks specifically target small and mid-size businesses, largely because they are perceived as easier targets with fewer defences. The financial and reputational damage from a breach — including data loss, downtime, and client trust — can be severe. Most attacks succeed not because defences are impossible to build, but because none were in place. Aegis makes professional-grade protection accessible and affordable.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          <h3>How much do your cybersecurity services cost?</h3>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>Your first security assessment is completely free — no credit card, no catch. Our paid services are priced to be genuinely accessible for small and mid-size businesses, well below typical enterprise security rates. Contact us and we'll provide a clear quote based on your specific needs.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          <h3>How quickly do I receive my audit report?</h3>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>We deliver a complete, plain-language PDF report within 48 hours of beginning your security assessment. The report covers every vulnerability found and provides exact, prioritised steps to fix each issue — no IT background required to act on it.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          <h3>What is DMARC and why does my business need it?</h3>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>DMARC (Domain-based Message Authentication, Reporting and Conformance) is an email authentication standard that prevents attackers from sending emails that appear to come from your domain. Without it, scammers can impersonate your business to target your clients or staff. Aegis configures SPF, DKIM and DMARC as part of the Email Security Setup service.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          <h3>Do I need to sign a long-term contract?</h3>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>No. Aegis has no lock-in contracts of any kind. Individual services are available as one-time engagements. If you want ongoing protection, our monthly check-in retainer runs month-to-month — you stay because the service is useful, not because you're contractually obligated.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">
+          <h3>Can phishing training be delivered remotely?</h3>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>Yes. Our 60-minute phishing awareness training session is available both remotely (via video call) and in person. It covers real-world phishing examples, how to spot red flags, what to do if someone clicks a suspicious link, and practical security habits for your whole team.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT / AUDIT FORM
+═══════════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-h2">
+  <div class="form-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="form-layout">
+
+      <div class="form-left reveal">
         <div class="eyebrow">Free Audit</div>
-        <h2 id="contact-h2">Let's See Where You Stand</h2>
-        <p>Tell us about your business and we'll run a free security assessment — no commitment, no sales pitch, just an honest look at what's exposed.</p>
+        <h2 id="contact-h2">Get Your Free<br>Security Assessment</h2>
+        <p>Tell us about your business and we'll run a free cybersecurity assessment — no commitment, no sales pitch, just an honest look at what's exposed and how to fix it.</p>
 
-        <ul class="promises">
-          <li class="promise">
-            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <ul class="form-promises">
+          <li class="fp-row">
+            <div class="fp-tick" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
             100% free — no credit card, no catch
           </li>
-          <li class="promise">
-            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            Report delivered within 48 hours
+          <li class="fp-row">
+            <div class="fp-tick" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Complete report delivered within 48 hours
           </li>
-          <li class="promise">
-            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <li class="fp-row">
+            <div class="fp-tick" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
             Your information is never shared or sold
           </li>
-          <li class="promise">
-            <div class="p-ico"><svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-            Findings first — no sales pitch on the call
+          <li class="fp-row">
+            <div class="fp-tick" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Findings first — no sales pitch
           </li>
         </ul>
       </div>
 
-      <div class="reveal d2">
+      <div class="reveal rv-2">
         <div class="form-card">
-          <div class="form-card-hd">Request Free Security Audit</div>
-          <div class="form-body">
-            <form id="aegis-form" novalidate>
-              <div class="fg">
-                <label class="fl" for="f-name">Full Name</label>
-                <input id="f-name" type="text" name="entry.1079675005" class="fi" placeholder="Your name" required autocomplete="name">
-              </div>
-              <div class="fg">
-                <label class="fl" for="f-org">Organisation Name</label>
-                <input id="f-org" type="text" name="entry.1174374992" class="fi" placeholder="Your organisation" autocomplete="organization">
-              </div>
-              <div class="fg">
-                <label class="fl" for="f-contact">Email or WhatsApp</label>
-                <input id="f-contact" type="text" name="entry.795685209" class="fi" placeholder="How to reach you" required autocomplete="email">
-              </div>
-              <div class="fg">
-                <label class="fl" for="f-detail">
-                  Main Concern
-                  <span style="font-weight:300;opacity:.45;margin-left:4px;">(optional)</span>
-                </label>
-                <textarea id="f-detail" name="entry.1929013246" class="fi" placeholder="e.g. We have a WordPress site and aren't sure if it's secure, or we recently received a suspicious email…"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary submit-btn">Send Request</button>
-            </form>
-
-            <div id="form-ok" role="alert">
-              <div class="ok-icon">
-                <svg class="ic" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <p>Request Received</p>
-              <span>We'll be in touch within 48 hours.</span>
+          <div class="form-card-eyebrow">
+            Request Your Free Security Audit
+            <span>No commitment required</span>
+          </div>
+          <form id="google-form" novalidate aria-label="Security audit request form">
+            <div class="form-group">
+              <label class="form-label" for="f-name">Full Name</label>
+              <input id="f-name" type="text" name="entry.1079675005" class="form-input"
+                     placeholder="Your full name" required
+                     autocomplete="name" aria-required="true">
             </div>
+            <div class="form-group">
+              <label class="form-label" for="f-company">Business Name</label>
+              <input id="f-company" type="text" name="entry.1174374992" class="form-input"
+                     placeholder="Your business name"
+                     autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-contact">Email or WhatsApp</label>
+              <input id="f-contact" type="text" name="entry.795685209" class="form-input"
+                     placeholder="How to reach you" required
+                     autocomplete="email" aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-details">
+                Main Concern <span class="form-opt">(optional)</span>
+              </label>
+              <textarea id="f-details" name="entry.1929013246" class="form-input"
+                        placeholder="e.g. We run a WordPress site and aren't sure if it's secure, or we recently received a suspicious email…"
+                        aria-describedby="f-details-hint"></textarea>
+              <span id="f-details-hint" class="sr-only">Describe your main security concern or any recent suspicious activity you've noticed.</span>
+            </div>
+            <button type="submit" class="btn btn-solid form-submit">
+              <span>Send My Request</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+          </form>
+          <div id="form-success" role="alert" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p>Request Received</p>
+            <span>We'll be in touch within 48 hours with your complete security findings.</span>
           </div>
         </div>
       </div>
@@ -430,17 +871,23 @@
 </section>
 
 
-<!-- ═══════════════════════════ FOOTER ═══════════════════ -->
-<footer aria-label="Site footer">
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer id="footer" aria-label="Site footer">
   <div class="container">
-
-    <div class="footer-grid">
-      <div class="f-brand">
-        <div class="f-logo"><img src="assets/aegis_logo.png" alt="Aegis Security"></div>
-        <p>Cybersecurity for organisations that can't afford to be vulnerable.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/aegis_logo.png"
+               alt="Aegis Security — Cybersecurity for Small and Mid-Size Businesses"
+               class="footer-logo-img"
+               width="180" height="64"
+               loading="lazy">
+        </div>
+        <p>Professional cybersecurity for organisations that can't afford to be vulnerable. Clear. Affordable. Effective.</p>
       </div>
-
-      <div class="f-col">
+      <div class="footer-col">
         <h4>Services</h4>
         <ul>
           <li><a href="#services">Website Security Audit</a></li>
@@ -448,44 +895,32 @@
           <li><a href="#services">Email Security Setup</a></li>
           <li><a href="#services">Phishing Awareness Training</a></li>
           <li><a href="#services">Data Backup Assessment</a></li>
-          <li><a href="#services">Monthly Check-in</a></li>
+          <li><a href="#services">Monthly Security Check-in</a></li>
         </ul>
       </div>
-
-      <div class="f-col">
+      <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#why-us">Why Aegis</a></li>
+          <li><a href="#about">About Aegis</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Free Audit</a></li>
           <li><a href="mailto:adwaithur.contact@gmail.com">Email Us</a></li>
-          <li><a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="footer-btm">
+    <div class="footer-bottom">
       <span>&copy; 2026 Aegis Security. All rights reserved.</span>
-      <div class="f-socials">
-
-        <a href="mailto:adwaithur.contact@gmail.com" class="f-soc" aria-label="Email">
-          <svg class="ic" viewBox="0 0 24 24">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
+      <div class="footer-socials">
+        <a href="mailto:adwaithur.contact@gmail.com" class="social-link" aria-label="Send us an email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
-
-        <a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener" class="f-soc" aria-label="LinkedIn">
-          <svg class="ic" viewBox="0 0 24 24">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
+        <a href="https://www.linkedin.com/in/adwaithur" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Aegis Security on LinkedIn (opens in new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-
       </div>
     </div>
-
   </div>
 </footer>
 
